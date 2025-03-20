@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DevOps Portfolio - [Your Name]</title>
+    <title>DevOps Portfolio - Jayesh Tripathi</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -12,12 +12,12 @@
             background-color: #f4f4f4;
             color: #333;
             line-height: 1.6;
-            text-align: center;
         }
 
         header {
             background-color: #3498db;
             color: white;
+            text-align: center;
             padding: 2em 0;
         }
 
@@ -41,6 +41,7 @@
 
         nav {
             background-color: #2980b9;
+            text-align: center;
             padding: 1em 0;
         }
 
@@ -72,18 +73,39 @@
             padding-bottom: 0.5em;
         }
 
+        .project {
+            margin-bottom: 1.5em;
+            border: 1px solid #ddd;
+            padding: 1em;
+            border-radius: 5px;
+        }
+
+        .project h3 {
+            color: #2980b9;
+            margin-top: 0;
+        }
+
         footer {
+            text-align: center;
             padding: 1em 0;
             background-color: #333;
             color: white;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            nav a {
+                display: block;
+                margin: 0.5em auto;
+            }
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>[Jayesh Tripathi]</h1>
-        <p>DevOps Engineer</p>
         <img src="profile_pic.jpeg" alt="Profile Picture" class="profile-image">
+        <h1>Jayesh Tripathi</h1>
+        <p>DevOps Engineer</p>
     </header>
 
     <nav>
@@ -96,12 +118,61 @@
     <section id="about">
         <h2>About Me</h2>
         <p>
-            I am a passionate DevOps Engineer with experience in automating deployments, managing infrastructure, and ensuring system reliability. My expertise includes cloud computing (AWS, Azure, GCP), CI/CD pipelines, containerization (Docker, Kubernetes), and infrastructure as code (Terraform, Ansible).
+            I am a passionate DevOps Engineer with experience in automating deployments, managing infrastructure, and ensuring system reliability. My expertise includes cloud computing (AWS, Azure, GCP), CI/CD pipelines, containerization (Docker, Kubernetes), and infrastructure as code (Terraform, Ansible). I thrive in fast-paced environments and enjoy solving complex problems.
         </p>
     </section>
 
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Automated CI/CD Pipeline for Microservices</h3>
+            <p>
+                Developed a fully automated CI/CD pipeline using Jenkins, Docker, and Kubernetes to deploy microservices to AWS EKS. This reduced deployment time by 50% and improved overall release velocity.
+            </p>
+        </div>
+        <div class="project">
+            <h3>Infrastructure as Code with Terraform</h3>
+            <p>
+                Implemented infrastructure as code using Terraform to manage AWS resources, ensuring consistency and repeatability of deployments. This resulted in a 30% reduction in infrastructure provisioning time.
+            </p>
+        </div>
+        </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Cloud Computing: AWS, Azure, GCP</li>
+            <li>CI/CD: Jenkins, GitLab CI, CircleCI</li>
+            <li>Containerization: Docker, Kubernetes</li>
+            <li>Infrastructure as Code: Terraform, Ansible</li>
+            <li>Scripting: Python, Bash</li>
+            <li>Monitoring: Prometheus, Grafana</li>
+            <li>Version Control: Git</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: jayeshtripathi2000@gmail.com</p>
+        <p>LinkedIn: www.linkedin.com/in/jayesh-tripathi-3582691a9</p>
+        <p>GitHub: github.com/Jayesh-CodeHub</p>
+    </section>
+
     <footer>
-        <p>&copy; 2025 [Jayesh Tripathi]</p>
+        <p>&copy; 2025 Jayesh Tripathi</p>
     </footer>
+
+    <script>
+        // Optional: Add JavaScript for interactive elements (e.g., smooth scrolling)
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
